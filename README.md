@@ -1,5 +1,4 @@
-# ComplexMathScripts
-# factorial_calculator.py
+ComplexMathScripts
 
 def calculate_factorial(n):
     """
