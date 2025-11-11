@@ -4,8 +4,29 @@
 def calculate_factorial(n):
     """
     Calculates the factorial of a non-negative integer n.
-    Raises ValueError for negative inputs or non-integer types.
-    """
+Add initial Python task scheduling script
+import time
+import datetime
+
+def perform_task():
+    """Simulates performing a scheduled task."""
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Task executed at: {current_time} - Status: OK")
+
+def main():
+    """Main loop for the simple task scheduler."""
+    print("Starting Simple Task Scheduler...")
+    print("Task execution interval set to 10 seconds.") # <--- خط اضافه شده
+    try:
+        while True:
+            perform_task()
+            # Wait for 10 seconds before the next task execution # <--- تغییر زمان از 5 به 10
+            time.sleep(10)
+    except KeyboardInterrupt:
+        print("\nScheduler stopped manually.")
+
+if __name__ == "__main__":
+    main()    """
     if not isinstance(n, int):
         raise ValueError("Input must be an integer.")
     if n < 0:
