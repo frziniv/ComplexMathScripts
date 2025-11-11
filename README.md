@@ -10,7 +10,6 @@ import datetime
 
 def perform_task():
     """Simulates performing a scheduled task."""
-    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"Task executed at: {current_time} - Status: OK")
 
 def main():
